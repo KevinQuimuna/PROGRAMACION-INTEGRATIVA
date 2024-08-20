@@ -1,0 +1,68 @@
+/* Estilos básicos del contenedor de la barra de navegación */
+nav {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 30px; /* Espaciado interior */
+    display: flex; /* Modelo de caja flexible */
+    justify-content: space-between; /* Distribuye el contenido con espacio entre elementos */
+    align-items: center; /* Alineación vertical de los elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Estilos de la lista no ordenada dentro de la barra de navegación */
+nav ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    display: flex; /* Modelo de caja flexible */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
+}
+
+/* Estilos de los elementos de la lista */
+nav li {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilos de los enlaces */
+nav a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    padding: 5px 10px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto hover en los enlaces */
+nav a:hover {
+    background-color: #575757; /* Color de fondo al pasar el cursor */
+    color: #f1f1f1; /* Color del texto al pasar el cursor */
+}
+
+/* Estilos de un enlace activo */
+nav a.active {
+    background-color: #444; /* Color de fondo para el enlace activo */
+    color: #f1f1f1; /* Color del texto para el enlace activo */
+}
+
+/* Estilos para el logo o nombre del sitio */
+nav .logo {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        width: 100%; /* Ancho completo */
+    }
+
+    nav li {
+        margin: 10px 0; /* Espaciado vertical entre los elementos de la lista */
+    }
+}
